@@ -1,0 +1,2 @@
+function e(e,a){localStorage.setItem(e,a)}function a(e){localStorage.removeItem(e)}var t;!function(e){e.example_flag="example_flag"}(t||(t={}));var r=Object.values(t);exports.isFeatureFlagEnabled=function(e){return"true"===function(e){return localStorage.getItem(e)}(e)},exports.parseQueryParamsToFlags=function(t){for(var n=0,l=Object.entries(t);n<l.length;n++){var o=l[n],c=o[0],s=o[1];if(r.includes(c))switch(s){case"true":e(c,s);break;case"false":a(c)}}};
+//# sourceMappingURL=feature-flags.cjs.map

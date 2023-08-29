@@ -1,0 +1,2 @@
+function e(e,t){localStorage.setItem(e,t)}function t(e){localStorage.removeItem(e)}var a;!function(e){e.example_flag="example_flag"}(a||(a={}));var r=Object.values(a);function n(e){return"true"===function(e){return localStorage.getItem(e)}(e)}function c(a){for(var n=0,c=Object.entries(a);n<c.length;n++){var o=c[n],l=o[0],u=o[1];if(r.includes(l))switch(u){case"true":e(l,u);break;case"false":t(l)}}}export{n as isFeatureFlagEnabled,c as parseQueryParamsToFlags};
+//# sourceMappingURL=feature-flags.module.js.map

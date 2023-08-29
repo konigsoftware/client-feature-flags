@@ -1,0 +1,24 @@
+{
+  "name": "client-feature-flags",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/feature-flags.cjs",
+    "default": "./dist/feature-flags.modern.js"
+  },
+  "main": "./dist/feature-flags.cjs",
+  "module": "./dist/feature-flags.module.js",
+  "unpkg": "./dist/feature-flags.umd.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}

@@ -1,0 +1,2 @@
+function e(e,t){localStorage.setItem(e,t)}function t(e){localStorage.removeItem(e)}var n;!function(e){e.example_flag="example_flag"}(n||(n={}));const o=Object.values(n);function c(e){return"true"===function(e){return localStorage.getItem(e)}(e)}function a(n){for(const[c,a]of Object.entries(n))if(o.includes(c))switch(a){case"true":e(c,a);break;case"false":t(c)}}export{c as isFeatureFlagEnabled,a as parseQueryParamsToFlags};
+//# sourceMappingURL=feature-flags.modern.js.map
